@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+.spell{
+  img{
+    transform: rotate(28deg);
+    width: 50%;
+  }
+  h2{
+
+  text-align: center;
+  }
+  
+border-radius: 10px;
+border: 2px solid #D7A425;
+font-family: "Acme", sans-serif;
+font-size: 1.3rem;
+padding: 0.5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #740001;
+background-color: #F4B731;
+background-image: url('https://media.istockphoto.com/id/617742228/de/foto/alte-schmutzige-und-grunge-papier-textur.jpg?s=612x612&w=0&k=20&c=CGhWhqmPMgwTbfxrmarn5TDeNBCjUx4733zMSmhnbuI=');
+.spell-text{
+
+    font-size: 1.1rem;
+    width: 100%;
+    padding: .3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+color: black;
+
+background-position: center;
+    height: 100%;
+   
+}}

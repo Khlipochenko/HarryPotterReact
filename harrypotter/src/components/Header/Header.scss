@@ -1,0 +1,15 @@
+.header{
+    width: 100%;
+    position: sticky;
+    background: #00161D;
+    background-image: url('https://www.shutterstock.com/image-photo/photo-sky-night-beautiful-stars-260nw-2461565919.jpg');
+    // background-image: url('https://images.unsplash.com/photo-1647866873870-92d45763ef44?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+     text-align: center;
+    background-size: cover;
+
+   padding:0;
+   img{
+    width: 10rem;
+    padding-top: 1rem;
+   }
+}
