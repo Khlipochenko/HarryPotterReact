@@ -8,13 +8,16 @@
 align-items: center;
 flex-direction: column;
 color:#740001;
+gap: .2rem;
 justify-content: center;
-    width:15rem;
+    width:16rem;
     border:2px solid black;
     background: #F7E7C2;
     img{
 width: 10rem;
 
+height: 15rem;
+object-fit: contain;
 
     }
 }

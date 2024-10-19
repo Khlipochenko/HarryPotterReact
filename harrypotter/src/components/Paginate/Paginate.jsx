@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import './Paginate.scss'
 import ReactPaginate from "react-paginate";
 import { CharactersContext } from "../../contexts/CharactersContext";
- export const Paginate = ({ itemsPerPage, itemsData, setCurrentItems })=>{
+ export const Paginate = ({ itemsPerPage, itemsData, setCurrentItems, selectedHouse })=>{
   //   const{charactersData, setCurrentCharacters }=useContext(CharactersContext);
     const[pageCount,setPageCount]=useState(0)
   

@@ -3,10 +3,28 @@
   padding-top: 2rem;
     
     display: flex;
+    flex-direction: column;
     background: linear-gradient(0deg, rgb(15, 61, 99) 14%, #060D1F);
+width: 100%;
+  height: 100vh;
+gap: .2rem;
+align-items: center;
+   .character-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 17rem);
+    gap: 2rem;
+    grid-auto-rows: 22rem;
+ text-align: center;
 
-    flex-wrap: wrap;
-gap: 2rem;
-justify-content: center;
-   
+   }
+   .searche-panel{
+    width: 93rem;// 17+5+2*4
+    display: flex;
+    gap:0.5rem;
+
+  
+   justify-content: start;
+   padding-bottom: .5rem;
+    
+   }
 }
