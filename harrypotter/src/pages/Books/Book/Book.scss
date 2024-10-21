@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+.book-page{
+display: flex;
+justify-content: center;
+background: linear-gradient(0deg, rgb(15, 61, 99) 14%, #060D1F);
+height: 100vh;
+color:#740001;
+font-family: "Arima", system-ui;
+font-size: 1.5rem;
+.book-grid{
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 60%;
+    background: #F7E7C2;
+    display: grid;
+    height: 70%;
+    gap: 2rem;
+    grid-template-areas:
+    'name name' 
+    'img info'
+    'img back';
+h2{
+    grid-area: name;
+    justify-self: center;
+}
+img{
+    grid-area: img;
+    width: 20rem;
+}
+.info{
+    grid-area: info;
+    text-align: justify;
+    a{
+        color:#740001;
+        &:hover{
+            color: #bd2d2f;
+        }
+    }
+}
+.book-back{
+    grid-area: back;
+    justify-self: end;
+    font-size: 2rem;
+    a{
+       text-decoration: none;
+       font-weight: bold;
+       color: #c00c0f;
+       &:hover{
+        color:#dd4e50
+      } 
+    }
+
+}
+}
+}

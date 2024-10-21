@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom"
 import { Header } from "../Header/Header"
 import {Footer} from "../Footer/Footer"
 import { Provider } from '../../contexts/CharactersContext'
-import { MovieProvider } from "../../contexts/MovieContext"
+import { MovieProvider } from "../../contexts/MovieBookContext"
 export const Layout=()=>{
     return(<>
      <Provider>

@@ -27,8 +27,8 @@ const [currentSpells, setcurrentSpells]=useState([])
             currentSpells?(<ul className="spells-grid">{currentSpells.map((spell)=><SpellsCard key={spell.id} spell={spell}></SpellsCard>)}</ul>):(<p>Loading ....</p>)
         
         }
-    </div>
-    <Paginate itemsPerPage={10} itemsData={spells} setCurrentItems={setcurrentSpells}  ></Paginate>
+   
+    <Paginate itemsPerPage={10} itemsData={spells} setCurrentItems={setcurrentSpells}  ></Paginate> </div>
     </>
     )
 }

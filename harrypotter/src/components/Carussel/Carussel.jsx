@@ -3,12 +3,12 @@ import { TbArrowBigLeftLinesFilled } from "react-icons/tb";
 import { TbArrowBigRightLinesFilled } from "react-icons/tb";
 import{useContext, useEffect, useState} from 'react'
 import { useNavigate } from "react-router-dom";
-import { MovieContext } from "../../contexts/MovieContext";
+import { MovieBookContext } from "../../contexts/MovieBookContext";
 
 
 export const Carousel=()=>{
-  const{movies}=useContext(MovieContext)
-    const[index, setIndex]=useState(0)
+  const{movies,index, setIndex}=useContext(MovieBookContext)
+   
     const navigate= useNavigate()
   
     function handleClick(movie){
@@ -20,7 +20,7 @@ export const Carousel=()=>{
         <>
         <div className="carousel">
        
-        <button onClick={()=>setIndex( index>0? index-1:index)}> <TbArrowBigLeftLinesFilled style={{color:'#DA6763'}} /></button>
+        <button className="carussel-button"   onClick={()=>setIndex( index>0? index-1:index)}> <TbArrowBigLeftLinesFilled  /></button>
     
        { movies.slice(index, index+3).map((movie)=>(
      
@@ -29,7 +29,7 @@ export const Carousel=()=>{
         
        ))
 }
-<button    onClick={()=>setIndex(movies.length-3>index? index+1:index)}><TbArrowBigRightLinesFilled   style={{color:'#DA6763'}}   /></button>
+<button  className="carussel-button"   onClick={()=>setIndex(movies.length-3>index? index+1:index)}><TbArrowBigRightLinesFilled     /></button>
         </div>
        
         </>

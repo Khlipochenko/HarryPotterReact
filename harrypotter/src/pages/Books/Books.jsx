@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { BooksCard } from "../../components/BooksCard/BooksCard";
+import "./Books.scss";
+import { MovieBookContext } from "../../contexts/MovieBookContext";
 export const Books=()=>{
-    const[booksData, setBooksData]=useState(null);
+    const {booksData, setBooksData}=useContext(MovieBookContext)
     async function fetchBooksData() {
         try{
         const response= await fetch('https://potterhead-api.vercel.app/api/books')
@@ -17,9 +19,10 @@ export const Books=()=>{
     },[])
     return(<>
     {booksData?(
+        <div className="books-page">
         <div className="books">
             {booksData.map((book)=><BooksCard props={book} key={book.serial}></BooksCard>)}
-        </div>
+        </div></div>
     ):(<p>Loading ...</p>)}
     
   

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+.character-container {
+    font-family: "Arima", system-ui;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(15, 61, 99) 14%, #060D1F);
+    height: 100vh;
+
+    .einzel-character {
+        display: grid;
+        height: 40rem;
+        gap:2rem;
+        color:#740001;
+        border-radius: 10px;
+    
+        grid-template-areas: 
+        'name name'
+        'bild info'
+        'zurück zurück';
+        grid-template-columns: 1fr 1fr; 
+        background-color: #F7E7C2;
+
+        .name {
+            grid-area: name;
+            text-align: center;
+            align-self: center;
+            font-size: 2rem;
+           
+        }
+
+        .bild {
+            grid-area: bild;
+            margin-left: 1rem;
+            width: 20rem; 
+
+            img {
+               width: 20rem;
+               height: 25rem;
+                object-fit:contain ;
+
+                
+              
+                
+            }
+        }
+
+        .info {
+            font-size: 1.2rem;
+            grid-area: info;
+            
+            ul {
+                margin-left: 2rem;
+            }
+          
+            span{
+                font-weight: bold;
+            }
+         
+        }
+
+        .zurück {
+            grid-area: zurück;
+            justify-self: center;
+            font-size: 2rem;
+            padding-bottom: 1rem;
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: #c00c0f;
+              &:hover{
+                color:#bd2d2f
+              } 
+            }
+        
+        }
+    }
+}

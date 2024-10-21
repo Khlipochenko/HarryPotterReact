@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import "./BooksCard.scss"
 export const BooksCard=({props})=>{
     const navigate= useNavigate()
     const book=props;
@@ -8,7 +8,7 @@ export const BooksCard=({props})=>{
     }
     return(<>
         <div className="book-card" onClick={handleClick}>
-            <h2> {book.title}</h2>
+           
             <img src={book.cover} alt={book.title}/>
             <p>{book.release_date}</p>
 

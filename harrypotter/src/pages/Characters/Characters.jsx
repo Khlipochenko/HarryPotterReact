@@ -1,19 +1,20 @@
 import { useContext, useEffect, useState } from "react";
 import { CharactersContext } from "../../contexts/CharactersContext";
 import { Card } from "../../components/Card/Card";
-import { Outlet } from "react-router-dom";
+;
 import { Paginate } from "../../components/Paginate/Paginate";
 import "./Characters.scss";
 import { Filter } from "../../components/Filter/Filter";
 import { Search } from "../../components/Search/Search";
 export const Characters = () => {
     const[selectedHouse, setSelectedHouse]=useState('')
+    const[namenData, setNamenData]=useState([])
   const {
     charactersData,
     setCharactersData,
     currentCharacters,
-    setCurrentCharacters, houses, selectedCharacters, setSelectedCharacters
-  } = useContext(CharactersContext);
+    setCurrentCharacters, houses, selectedCharacters, setSelectedCharacters,
+    setFirstIndex, setCurrentPage} = useContext(CharactersContext);
 
   async function fetchCharactersData() {
     try {
@@ -22,6 +23,7 @@ export const Characters = () => {
       );
       const data = await response.json();
       setCharactersData(data);
+      setNamenData(data.map((data)=>data.name))
       
     } catch (error) {
       console.log(error);
@@ -29,10 +31,13 @@ export const Characters = () => {
   }
   useEffect(() => {
     fetchCharactersData();
+  
   }, []);
   useEffect(()=>{
+
     if (selectedHouse!=''){
         setSelectedCharacters(charactersData.filter((el)=> el.house==selectedHouse))
+        setFirstIndex(0)
     }else {
         setSelectedCharacters(charactersData)
     }
@@ -44,7 +49,7 @@ export const Characters = () => {
       {currentCharacters ? (
         <> <div className="character-list">
         <div className="searche-panel">
-        <Search></Search>
+        <Search searchItems={namenData}></Search>
         <Filter items={houses} selectedItem={selectedHouse}  name={'houses'} setSelectedItem={setSelectedHouse} className='filter'></Filter></div>
          
           <div className="character-grid">
@@ -57,6 +62,7 @@ export const Characters = () => {
             itemsPerPage={10}
             itemsData={selectedCharacters}
             setCurrentItems={setCurrentCharacters}
+          
           ></Paginate></div>
         </>
       ) : (

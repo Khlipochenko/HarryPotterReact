@@ -9,14 +9,16 @@ align-items: center;
 flex-direction: column;
 color:#740001;
 gap: .2rem;
+border-radius: 0.5rem;
+
 justify-content: center;
-    width:16rem;
+    width:100%;
     border:2px solid black;
     background: #F7E7C2;
     img{
 width: 10rem;
 
-height: 15rem;
+height: 13rem;
 object-fit: contain;
 
     }

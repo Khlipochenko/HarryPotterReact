@@ -2,16 +2,17 @@ import { useContext, useEffect, useState } from "react";
 import './Paginate.scss'
 import ReactPaginate from "react-paginate";
 import { CharactersContext } from "../../contexts/CharactersContext";
- export const Paginate = ({ itemsPerPage, itemsData, setCurrentItems, selectedHouse })=>{
-  //   const{charactersData, setCurrentCharacters }=useContext(CharactersContext);
-    const[pageCount,setPageCount]=useState(0)
+ export const Paginate = ({ itemsPerPage, itemsData, setCurrentItems,  })=>{
+  const{firstIndex, setFirstIndex  ,currentPage, setCurrentPage}=useContext(CharactersContext);
+    const[pageCount,setPageCount]=useState(0)//anzahl der Seiten
   
-    const[firstIndex, setFirstIndex]=useState(0);
+   
 
 
     const handlePageClick=(event)=>{
         const newFirstindex=event.selected*itemsPerPage% itemsData.length;
         setFirstIndex(newFirstindex)
+        setCurrentPage(event.selected)
     }
     useEffect(()=>{
         const lastIndex = firstIndex + itemsPerPage;
@@ -27,18 +28,19 @@ return(
         marginPagesDisplayed={2}  
         pageCount={pageCount}
         previousLabel="< previous"
-        pageClassName="page-item"
-        pageLinkClassName="page-link"
-        previousClassName="page-item"
-        previousLinkClassName="page-link"
-        nextClassName="page-item"
-        nextLinkClassName="page-link"
-        breakLabel="..."
-        breakClassName="page-item"
-        breakLinkClassName="page-link"
+        // pageClassName="page-item"
+        // pageLinkClassName="page-link"
+        // previousClassName="page-item"
+        // previousLinkClassName="page-link"
+        // nextClassName="page-item"
+        // nextLinkClassName="page-link"
+        // breakLabel="..."
+        // breakClassName="page-item"
+        // breakLinkClassName="page-link"
+        forcePage={currentPage}
         containerClassName="pagination"
         activeClassName="active"
-        renderOnZeroPageCount={null}
+        // renderOnZeroPageCount={null}
       />
    
        

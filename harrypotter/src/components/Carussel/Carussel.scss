@@ -1,5 +1,25 @@
+
+.carousel{
+padding-top: 5rem;
+
 img{
-    width:30rem;
-    cursor: pointer;
+    width:25rem;
+    cursor: pointer;}
     
-}
+.carussel-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color:transparent;
+    border-radius: 50%;
+    color: #DCC07A;
+   border: none;
+    &:hover{
+     color: #a30709;
+
+    }
+    &:active{
+        color: #e71d21;
+    }
+} }
