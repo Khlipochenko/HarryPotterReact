@@ -1,0 +1,28 @@
+.shop-header{
+    display: flex;
+   justify-content: space-between;
+   padding: .5rem 2rem;
+background-color:#E2CB8E ;
+.shop-search-panel{
+    display: flex;
+    gap: 1rem;
+}
+.link-to-other-page{
+    display: flex;
+    gap: 2rem;
+    font-size: 2.3rem;
+    align-items: center;
+   
+    a{
+        color: #797b80;
+        &:hover{
+            color:bisque
+        }
+        &.active{
+            color:#f3351c
+        }
+    }
+}
+
+
+}

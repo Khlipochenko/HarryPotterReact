@@ -8,6 +8,10 @@ import { Book } from "../pages/Books/Book/Book";
 import { Movie } from "../pages/Movies/Movie/Movie";
 import { Character } from "../pages/Characters/Character/Character";
 import { Shop } from "../pages/Shop/Shop";
+import { Cart } from "../pages/Shop/Cart/Cart";
+import { Product } from "../pages/Shop/Product/Product";
+import { Wischlist } from "../pages/Shop/Wischlist/Wischlist";
+import { LayoutShop } from "../components/LayoutShop/LayoutShop";
 export const router = createBrowserRouter([
   {
     element: <Layout></Layout>,
@@ -44,8 +48,25 @@ export const router = createBrowserRouter([
         path: "/spells",
       },
       {
-        element: <Shop></Shop>,
+        element: <LayoutShop></LayoutShop>,
         path: "/shop",
+        children:[{
+          index: true,
+          element:<Shop></Shop>,
+          },
+          {element:<Wischlist></Wischlist>,
+          path:'/shop/wischlist'
+          },
+          {element:<Cart></Cart>,
+          path:'/shop/cart'
+          },
+          {element:<Product></Product>,
+          path:'/shop/:product'
+          }
+
+
+         
+        ]
        
       },
     ],

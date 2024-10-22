@@ -6,21 +6,10 @@ import { Filter } from "../../components/Filter/Filter";
 import { ShopContext } from "../../contexts/ShopContext";
 
 export const Shop = () => {
-    const{currentProducts, setCurrentProducts}=useContext(ShopContext)
-  const [products, setProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("");
- 
-  const [selectedSort, setSelectedSort] = useState("");
-  const categories = [
-    "Wands",
-    "Clothing",
-    "Accessories",
-    "Collectibles",
-    "Toys",
-    "Sweets",
-  ];
-
-  const sortOptions = ["low to high", "high to low"];
+    const{currentProducts, setCurrentProducts,
+        products, setProducts,selectedCategory, setSelectedCategory ,selectedSort, setSelectedSort, categories,sortOptions
+    }=useContext(ShopContext)
+  
 
   useEffect(() => {
     setProducts(data.products);
@@ -48,22 +37,22 @@ export const Shop = () => {
     } 
   }, [selectedSort, products, setCurrentProducts]);
   return (
-    <div className="shop-page">
-      <div className="shop-search-panel">
-        <Filter
-          items={sortOptions}
-          selectedItem={selectedSort}
-          setSelectedItem={setSelectedSort}
-          name={'price'}
-        ></Filter>
-        <Filter
-          items={categories}
-          selectedItem={selectedCategory}
-          setSelectedItem={setSelectedCategory}
-          name={"all categories"}
-        ></Filter>
-        
-      </div>
+    // <div className="shop-page">
+    //   <div className="shop-search-panel">
+    //     <Filter
+    //       items={sortOptions}
+    //       selectedItem={selectedSort}
+    //       setSelectedItem={setSelectedSort}
+    //       name={'price'}
+    //     ></Filter>
+    //     <Filter
+    //       items={categories}
+    //       selectedItem={selectedCategory}
+    //       setSelectedItem={setSelectedCategory}
+    //       name={"all categories"}
+    //     ></Filter>
+    //     <button className="schow-favorite"></button>
+    //   </div></div>
       <div className="shop">
         {currentProducts ? (
           <div className="products-grid">
@@ -74,7 +63,7 @@ export const Shop = () => {
         ) : (
           <p>loading ...</p>
         )}
-      </div>{" "}
-    </div>
+      </div>
+    
   );
 };
