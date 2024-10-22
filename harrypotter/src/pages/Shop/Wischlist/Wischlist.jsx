@@ -14,6 +14,10 @@ export const Wischlist = () => {
     setSelectedSort,
     sortOptions,
   } = useContext(ShopContext);
+   useEffect(()=>{
+    
+     setSelectedCategory('')
+   },[])
 
   // Фильтрация избранных продуктов
   useEffect(() => { 

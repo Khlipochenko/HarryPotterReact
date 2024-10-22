@@ -1,8 +1,14 @@
 .shop-header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     display: flex;
    justify-content: space-between;
    padding: .5rem 2rem;
+   top:8rem;
+   
 background-color:#E2CB8E ;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 .shop-search-panel{
     display: flex;
     gap: 1rem;
@@ -14,12 +20,22 @@ background-color:#E2CB8E ;
     align-items: center;
    
     a{
-        color: #797b80;
+        position: relative;
+        text-decoration: none;
+        .count-in-cart{
+            color: aliceblue;
+            position: absolute;
+            left:0.8rem;
+            top:.3rem;
+            font-size: 1.2rem;
+            
+        }
+        color: #061025;
         &:hover{
             color:bisque
         }
         &.active{
-            color:#f3351c
+            color:#AA1F0C
         }
     }
 }

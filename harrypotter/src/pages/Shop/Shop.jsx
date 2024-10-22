@@ -11,9 +11,10 @@ export const Shop = () => {
     }=useContext(ShopContext)
   
 
-  useEffect(() => {
-    setProducts(data.products);
-  }, []);
+    useEffect(()=>{
+   setCurrentProducts(products)
+      setSelectedCategory('')
+    },[])
 
   useEffect(() => {
     setSelectedSort('')
@@ -28,6 +29,7 @@ export const Shop = () => {
   }, [selectedCategory, products]);
 
   useEffect(() => {
+    console.log("products",products);
     if (selectedSort == sortOptions[0]) {
       const sortProducts = [...currentProducts].sort((a, b) => a.price - b.price);
       setCurrentProducts(sortProducts);
@@ -37,22 +39,7 @@ export const Shop = () => {
     } 
   }, [selectedSort, products, setCurrentProducts]);
   return (
-    // <div className="shop-page">
-    //   <div className="shop-search-panel">
-    //     <Filter
-    //       items={sortOptions}
-    //       selectedItem={selectedSort}
-    //       setSelectedItem={setSelectedSort}
-    //       name={'price'}
-    //     ></Filter>
-    //     <Filter
-    //       items={categories}
-    //       selectedItem={selectedCategory}
-    //       setSelectedItem={setSelectedCategory}
-    //       name={"all categories"}
-    //     ></Filter>
-    //     <button className="schow-favorite"></button>
-    //   </div></div>
+
       <div className="shop">
         {currentProducts ? (
           <div className="products-grid">

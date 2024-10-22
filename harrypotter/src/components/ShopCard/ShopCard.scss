@@ -1,21 +1,75 @@
 .shop-card{
-    border: 1px solid red;
+    h2{
+        text-align: center;
+        color: #570304;
+        margin-bottom: 1rem;
+    }
+    .mehr-button{
+        width:100%;
+        
+        padding: .6rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        background-color:#f59b52;
+        border: none;
+        border-radius: 5px;
+        margin-top: .4rem;
+        bottom: 2rem;
+        font-weight: bold;
+   color: #570304;
+    }
+    border: 2px solid rgb(185, 6, 6);
+    padding: 1rem;
+   
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     .bild{
         text-align: center;
         position: relative;
         .heart{
             position: absolute;
-            top: 1rem;
+            top: .3rem;
+            right: .3rem;
+            border: none;
+            background-color: transparent;
+            font-size: 2rem;
+            
 
         }
         img{
-        width: 15rem;}
+        width: 13rem;
+    height: 15rem;}
     }
     .price-menge{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+        color: #a82f31;
+        span{
+            font-weight: bold;
+        }
         input{
             width: 3rem;
+            height: 2.4rem;
+            text-align: center;
+            border: none;
+           border-bottom-left-radius: 7px;
+            border-top-left-radius: 7px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        button{
+            border-bottom-right-radius: 7px;
+            border-top-right-radius: 7px;
+            height: 2.4rem;
+            width: 3rem;
+            color: #570304;
+            background-color: transparent;
+            border: none;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            &:hover{
+                background-color:bisque
+            }
         }
     }
 }

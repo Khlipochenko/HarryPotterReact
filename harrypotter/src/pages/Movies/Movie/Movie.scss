@@ -2,7 +2,7 @@
 
 .movie{
     font-family: "Arima", system-ui;
-  
+  padding-top: 8rem;
     display: flex;
    justify-content: center;
     width: 100%;
@@ -13,7 +13,7 @@
     .movie-grid{
         width: 70%;
         border-radius: 10px;
-        height: 75%;
+        height: 85%;
         display: grid;
         margin-top: 2rem;
         padding: 1.5rem;

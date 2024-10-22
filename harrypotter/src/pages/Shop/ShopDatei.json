@@ -8,9 +8,10 @@
         "price": 29.99,
         "currency": "USD",
         "category": "Wands",
-        "stock": 150,
+        "stock": 15,
         "imageUrl": "/bilder/wand1.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 2,
@@ -19,9 +20,10 @@
         "price": 29.99,
         "currency": "USD",
         "category": "Wands",
-        "stock": 140,
+        "stock": 5,
         "imageUrl": "/bilder/wand2.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 3,
@@ -30,9 +32,10 @@
         "price": 39.99,
         "currency": "USD",
         "category": "Wands",
-        "stock": 120,
+        "stock": 12,
         "imageUrl": "/bilder/wand3.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 4,
@@ -41,9 +44,10 @@
         "price": 34.99,
         "currency": "USD",
         "category": "Wands",
-        "stock": 90,
+        "stock": 9,
         "imageUrl": "/bilder/wand4.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 5,
@@ -52,9 +56,10 @@
         "price": 29.99,
         "currency": "USD",
         "category": "Wands",
-        "stock": 110,
+        "stock": 11,
         "imageUrl": "/bilder/wand5.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 6,
@@ -63,9 +68,10 @@
         "price": 19.99,
         "currency": "USD",
         "category": "Clothing",
-        "stock": 200,
+        "stock": 20,
         "imageUrl": "/bilder/scarfGr.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 7,
@@ -74,9 +80,10 @@
         "price": 19.99,
         "currency": "USD",
         "category": "Clothing",
-        "stock": 180,
+        "stock": 18,
         "imageUrl": "/bilder/scarfSl.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 8,
@@ -85,9 +92,10 @@
         "price": 19.99,
         "currency": "USD",
         "category": "Clothing",
-        "stock": 190,
+        "stock": 19,
         "imageUrl": "/bilder/scarfRav.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 9,
@@ -96,9 +104,10 @@
         "price": 19.99,
         "currency": "USD",
         "category": "Clothing",
-        "stock": 200,
+        "stock": 20,
         "imageUrl": "/bilder/scarfHuf.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 10,
@@ -107,9 +116,10 @@
         "price": 59.99,
         "currency": "USD",
         "category": "Clothing",
-        "stock": 85,
+        "stock": 8,
         "imageUrl": "/bilder/robe.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 11,
@@ -118,9 +128,10 @@
         "price": 39.99,
         "currency": "USD",
         "category": "Accessories",
-        "stock": 75,
+        "stock": 7,
         "imageUrl": "/bilder/map.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 12,
@@ -129,9 +140,10 @@
         "price": 34.99,
         "currency": "USD",
         "category": "Accessories",
-        "stock": 60,
+        "stock": 6,
         "imageUrl": "/bilder/necklace.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 13,
@@ -140,9 +152,10 @@
         "price": 9.99,
         "currency": "USD",
         "category": "Accessories",
-        "stock": 300,
+        "stock": 30,
         "imageUrl": "/bilder/ticket.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 14,
@@ -151,9 +164,10 @@
         "price": 199.99,
         "currency": "USD",
         "category": "Accessories",
-        "stock": 25,
+        "stock": 2,
         "imageUrl": "/bilder/trunk.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 15,
@@ -162,9 +176,10 @@
         "price": 14.99,
         "currency": "USD",
         "category": "Accessories",
-        "stock": 150,
+        "stock": 15,
         "imageUrl": "/bilder/keychain.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 16,
@@ -173,9 +188,10 @@
         "price": 24.99,
         "currency": "USD",
         "category": "Collectibles",
-        "stock": 100,
+        "stock": 10,
         "imageUrl": "/bilder/snitch.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 17,
@@ -184,9 +200,10 @@
         "price": 49.99,
         "currency": "USD",
         "category": "Collectibles",
-        "stock": 50,
+        "stock": 5,
         "imageUrl": "/bilder/cup.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 18,
@@ -195,9 +212,10 @@
         "price": 19.99,
         "currency": "USD",
         "category": "Collectibles",
-        "stock": 85,
+        "stock": 8,
         "imageUrl": "/bilder/banner.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 19,
@@ -206,9 +224,10 @@
         "price": 99.99,
         "currency": "USD",
         "category": "Collectibles",
-        "stock": 15,
+        "stock": 1,
         "imageUrl": "/bilder/castle.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 20,
@@ -217,9 +236,10 @@
         "price": 14.99,
         "currency": "USD",
         "category": "Collectibles",
-        "stock": 130,
+        "stock": 13,
         "imageUrl": "/bilder/pins.jpeg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 21,
@@ -228,9 +248,10 @@
         "price": 19.99,
         "currency": "USD",
         "category": "Toys",
-        "stock": 120,
+        "stock": 12,
         "imageUrl": "/bilder/hedwig.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 22,
@@ -239,9 +260,10 @@
         "price": 24.99,
         "currency": "USD",
         "category": "Toys",
-        "stock": 100,
+        "stock": 10,
         "imageUrl": "/bilder/niffler.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 23,
@@ -250,9 +272,10 @@
         "price": 9.99,
         "currency": "USD",
         "category": "Sweets",
-        "stock": 200,
+        "stock": 20,
         "imageUrl": "/bilder/frog.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 24,
@@ -261,9 +284,10 @@
         "price": 5.99,
         "currency": "USD",
         "category": "Sweets",
-        "stock": 250,
+        "stock": 25,
         "imageUrl":  "/bilder/beans.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },
       {
         "id": 25,
@@ -272,9 +296,10 @@
         "price": 24.99,
         "currency": "USD",
         "category": "Toys",
-        "stock": 95,
+        "stock": 9,
         "imageUrl":  "/bilder/fawkes.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
 
       },{
         "id": 26,
@@ -283,9 +308,10 @@
         "price": 49.99,
         "currency": "USD",
         "category": "Toys",
-        "stock": 70,
+        "stock": 7,
         "imageUrl": "/bilder/hut.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },{
         "id": 27,
         "name": "Buckbeak Figure",
@@ -293,9 +319,10 @@
         "price": 39.99,
         "currency": "USD",
         "category": "Collectibles",
-        "stock": 45,
+        "stock": 4,
         "imageUrl": "/bilder/buckbeak.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },{
         "id": 28,
         "name": "Hogwarts Snow Globe",
@@ -303,9 +330,10 @@
         "price": 29.99,
         "currency": "USD",
         "category": "Collectibles",
-        "stock": 60,
+        "stock": 6,
         "imageUrl": "/bilder/globe.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       },{
         "id": 29,
         "name": "Dobby Plush",
@@ -313,9 +341,10 @@
         "price": 24.99,
         "currency": "USD",
         "category": "Toys",
-        "stock": 85,
+        "stock": 8,
         "imageUrl": "/bilder/dobby.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       }, {
         "id": 30,
         "name": "Nimbus 2000 Broomstick",
@@ -323,9 +352,10 @@
         "price": 249.99,
         "currency": "USD",
         "category": "Collectibles",
-        "stock": 15,
+        "stock": 1,
         "imageUrl": "/bilder/nimbus.jpg",
-        "favorite":false
+        "favorite":false,
+        "cart":0
       }
      
     ]}
