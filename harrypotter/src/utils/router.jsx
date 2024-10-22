@@ -7,6 +7,7 @@ import { Characters } from "../pages/Characters/Characters";
 import { Book } from "../pages/Books/Book/Book";
 import { Movie } from "../pages/Movies/Movie/Movie";
 import { Character } from "../pages/Characters/Character/Character";
+import { Shop } from "../pages/Shop/Shop";
 export const router = createBrowserRouter([
   {
     element: <Layout></Layout>,
@@ -41,6 +42,11 @@ export const router = createBrowserRouter([
       {
         element: <Spells></Spells>,
         path: "/spells",
+      },
+      {
+        element: <Shop></Shop>,
+        path: "/shop",
+       
       },
     ],
   },

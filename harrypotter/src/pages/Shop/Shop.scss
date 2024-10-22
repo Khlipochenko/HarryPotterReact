@@ -1,0 +1,9 @@
+.shop{
+    display: flex;
+    justify-content: center;
+.products-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+}

@@ -10,7 +10,7 @@ export const Filter = ({ items, selectedItem, setSelectedItem, name }) => {
         onChange={(e) => setSelectedItem(e.target.value)}
       >
         <option value="">
-          <span>all {name}</span>
+          <span>{name}</span>
         </option>
         {items.map((item, i) => (
           <option key={i} value={item}>

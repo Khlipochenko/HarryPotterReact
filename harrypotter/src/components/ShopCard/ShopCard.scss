@@ -1,0 +1,21 @@
+.shop-card{
+    border: 1px solid red;
+    .bild{
+        text-align: center;
+        position: relative;
+        .heart{
+            position: absolute;
+            top: 1rem;
+
+        }
+        img{
+        width: 15rem;}
+    }
+    .price-menge{
+        display: flex;
+        justify-content: space-between;
+        input{
+            width: 3rem;
+        }
+    }
+}

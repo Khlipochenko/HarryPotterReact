@@ -1,0 +1,331 @@
+{
+    "shopName": "Harry Potter Wizarding Shop",
+    "products": [
+      {
+        "id": 1,
+        "name": "Harry Potter Wand",
+        "description": "An authentic replica of Harry Potter's wand. Made of resin and perfect for any fan.",
+        "price": 29.99,
+        "currency": "USD",
+        "category": "Wands",
+        "stock": 150,
+        "imageUrl": "/bilder/wand1.jpg",
+        "favorite":false
+      },
+      {
+        "id": 2,
+        "name": "Hermione Granger Wand",
+        "description": "A replica of Hermione Granger's wand, crafted with detail and perfect for any witch or wizard.",
+        "price": 29.99,
+        "currency": "USD",
+        "category": "Wands",
+        "stock": 140,
+        "imageUrl": "/bilder/wand2.jpg",
+        "favorite":false
+      },
+      {
+        "id": 3,
+        "name": "Dumbledore's Elder Wand",
+        "description": "The most powerful wand in the wizarding world, a replica of the Elder Wand used by Dumbledore.",
+        "price": 39.99,
+        "currency": "USD",
+        "category": "Wands",
+        "stock": 120,
+        "imageUrl": "/bilder/wand3.jpg",
+        "favorite":false
+      },
+      {
+        "id": 4,
+        "name": "Voldemort's Wand",
+        "description": "A sinister replica of Voldemort's wand, perfect for dark magic enthusiasts.",
+        "price": 34.99,
+        "currency": "USD",
+        "category": "Wands",
+        "stock": 90,
+        "imageUrl": "/bilder/wand4.jpg",
+        "favorite":false
+      },
+      {
+        "id": 5,
+        "name": "Ron Weasley's Wand",
+        "description": "A detailed replica of Ron Weasley's wand, perfect for any fan of the red-haired Gryffindor.",
+        "price": 29.99,
+        "currency": "USD",
+        "category": "Wands",
+        "stock": 110,
+        "imageUrl": "/bilder/wand5.jpg",
+        "favorite":false
+      },
+      {
+        "id": 6,
+        "name": "Gryffindor House Scarf",
+        "description": "A warm scarf in the colors of Gryffindor House. Show your pride for the brave house.",
+        "price": 19.99,
+        "currency": "USD",
+        "category": "Clothing",
+        "stock": 200,
+        "imageUrl": "/bilder/scarfGr.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 7,
+        "name": "Slytherin House Scarf",
+        "description": "A stylish scarf in the colors of Slytherin House. Ideal for ambitious wizards.",
+        "price": 19.99,
+        "currency": "USD",
+        "category": "Clothing",
+        "stock": 180,
+        "imageUrl": "/bilder/scarfSl.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 8,
+        "name": "Ravenclaw House Scarf",
+        "description": "A scarf in the colors of Ravenclaw House for the intellectually curious.",
+        "price": 19.99,
+        "currency": "USD",
+        "category": "Clothing",
+        "stock": 190,
+        "imageUrl": "/bilder/scarfRav.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 9,
+        "name": "Hufflepuff House Scarf",
+        "description": "A warm scarf in the colors of Hufflepuff House, perfect for loyal wizards and witches.",
+        "price": 19.99,
+        "currency": "USD",
+        "category": "Clothing",
+        "stock": 200,
+        "imageUrl": "/bilder/scarfHuf.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 10,
+        "name": "Gryffindor Quidditch Robe",
+        "description": "A high-quality replica of the Gryffindor Quidditch team robe.",
+        "price": 59.99,
+        "currency": "USD",
+        "category": "Clothing",
+        "stock": 85,
+        "imageUrl": "/bilder/robe.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 11,
+        "name": "Marauder's Map",
+        "description": "A magical map of Hogwarts showing all its secret passages and the locations of people inside.",
+        "price": 39.99,
+        "currency": "USD",
+        "category": "Accessories",
+        "stock": 75,
+        "imageUrl": "/bilder/map.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 12,
+        "name": "Time-Turner Necklace",
+        "description": "A stunning replica of Hermione Granger's Time-Turner. Perfect for cosplay or everyday wear.",
+        "price": 34.99,
+        "currency": "USD",
+        "category": "Accessories",
+        "stock": 60,
+        "imageUrl": "/bilder/necklace.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 13,
+        "name": "Hogwarts Express Ticket",
+        "description": "An exact replica of the Hogwarts Express ticket. Great for collectors.",
+        "price": 9.99,
+        "currency": "USD",
+        "category": "Accessories",
+        "stock": 300,
+        "imageUrl": "/bilder/ticket.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 14,
+        "name": "Hogwarts Trunk Set",
+        "description": "A full-sized replica of the Hogwarts trunk used by students, complete with house crest.",
+        "price": 199.99,
+        "currency": "USD",
+        "category": "Accessories",
+        "stock": 25,
+        "imageUrl": "/bilder/trunk.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 15,
+        "name": "Hogwarts House Keychain Set",
+        "description": "A set of 4 keychains, each featuring the crest of a Hogwarts house.",
+        "price": 14.99,
+        "currency": "USD",
+        "category": "Accessories",
+        "stock": 150,
+        "imageUrl": "/bilder/keychain.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 16,
+        "name": "Golden Snitch",
+        "description": "A detailed replica of the Golden Snitch from Quidditch. Comes with a stand for display.",
+        "price": 24.99,
+        "currency": "USD",
+        "category": "Collectibles",
+        "stock": 100,
+        "imageUrl": "/bilder/snitch.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 17,
+        "name": "Triwizard Tournament Cup",
+        "description": "A high-quality replica of the Triwizard Tournament Cup, with glowing effect.",
+        "price": 49.99,
+        "currency": "USD",
+        "category": "Collectibles",
+        "stock": 50,
+        "imageUrl": "/bilder/cup.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 18,
+        "name": "Hogwarts Crest Wall Banner",
+        "description": "A large wall banner featuring the Hogwarts crest. Perfect for decoration.",
+        "price": 19.99,
+        "currency": "USD",
+        "category": "Collectibles",
+        "stock": 85,
+        "imageUrl": "/bilder/banner.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 19,
+        "name": "Hogwarts Castle Replica",
+        "description": "A detailed and intricate model of Hogwarts Castle. Perfect for display.",
+        "price": 99.99,
+        "currency": "USD",
+        "category": "Collectibles",
+        "stock": 15,
+        "imageUrl": "/bilder/castle.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 20,
+        "name": "Hogwarts House Crest Pins",
+        "description": "A set of collectible pins featuring the crests of all four Hogwarts houses.",
+        "price": 14.99,
+        "currency": "USD",
+        "category": "Collectibles",
+        "stock": 130,
+        "imageUrl": "/bilder/pins.jpeg",
+        "favorite":false
+      },
+      {
+        "id": 21,
+        "name": "Hedwig Plush",
+        "description": "A soft and cuddly plush version of Harry Potter's loyal owl, Hedwig.",
+        "price": 19.99,
+        "currency": "USD",
+        "category": "Toys",
+        "stock": 120,
+        "imageUrl": "/bilder/hedwig.jpg",
+        "favorite":false
+      },
+      {
+        "id": 22,
+        "name": "Niffler Plush",
+        "description": "A cute plush of the mischievous Niffler from Fantastic Beasts.",
+        "price": 24.99,
+        "currency": "USD",
+        "category": "Toys",
+        "stock": 100,
+        "imageUrl": "/bilder/niffler.jpg",
+        "favorite":false
+      },
+      {
+        "id": 23,
+        "name": "Chocolate Frog",
+        "description": "A replica of the famous Chocolate Frog, complete with collectible card.",
+        "price": 9.99,
+        "currency": "USD",
+        "category": "Sweets",
+        "stock": 200,
+        "imageUrl": "/bilder/frog.jpg",
+        "favorite":false
+      },
+      {
+        "id": 24,
+        "name": "Bertie Bott's Every Flavour Beans",
+        "description": "A box of Bertie Bott's Every Flavour Beans, containing both delicious and questionable flavors.",
+        "price": 5.99,
+        "currency": "USD",
+        "category": "Sweets",
+        "stock": 250,
+        "imageUrl":  "/bilder/beans.jpg",
+        "favorite":false
+      },
+      {
+        "id": 25,
+        "name": "Fawkes Plush",
+        "description": "A soft plush version of Fawkes, Dumbledore's loyal phoenix.",
+        "price": 24.99,
+        "currency": "USD",
+        "category": "Toys",
+        "stock": 95,
+        "imageUrl":  "/bilder/fawkes.jpg",
+        "favorite":false
+
+      },{
+        "id": 26,
+        "name": "Sorting Hat",
+        "description": "A replica of the magical Sorting Hat, complete with sound effects.",
+        "price": 49.99,
+        "currency": "USD",
+        "category": "Toys",
+        "stock": 70,
+        "imageUrl": "/bilder/hut.jpg",
+        "favorite":false
+      },{
+        "id": 27,
+        "name": "Buckbeak Figure",
+        "description": "A detailed figure of Buckbeak, the Hippogriff from the Harry Potter series.",
+        "price": 39.99,
+        "currency": "USD",
+        "category": "Collectibles",
+        "stock": 45,
+        "imageUrl": "/bilder/buckbeak.jpg",
+        "favorite":false
+      },{
+        "id": 28,
+        "name": "Hogwarts Snow Globe",
+        "description": "A magical snow globe featuring Hogwarts Castle. Shake to see a snowfall over the castle.",
+        "price": 29.99,
+        "currency": "USD",
+        "category": "Collectibles",
+        "stock": 60,
+        "imageUrl": "/bilder/globe.jpg",
+        "favorite":false
+      },{
+        "id": 29,
+        "name": "Dobby Plush",
+        "description": "A soft and detailed plush of Dobby the house-elf, a loyal companion.",
+        "price": 24.99,
+        "currency": "USD",
+        "category": "Toys",
+        "stock": 85,
+        "imageUrl": "/bilder/dobby.jpg",
+        "favorite":false
+      }, {
+        "id": 30,
+        "name": "Nimbus 2000 Broomstick",
+        "description": "A replica of the Nimbus 2000, Harry Potter's first broomstick.",
+        "price": 249.99,
+        "currency": "USD",
+        "category": "Collectibles",
+        "stock": 15,
+        "imageUrl": "/bilder/nimbus.jpg",
+        "favorite":false
+      }
+     
+    ]}

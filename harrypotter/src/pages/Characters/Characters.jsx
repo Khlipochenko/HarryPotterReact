@@ -50,7 +50,7 @@ export const Characters = () => {
         <> <div className="character-list">
         <div className="searche-panel">
         <Search searchItems={namenData}></Search>
-        <Filter items={houses} selectedItem={selectedHouse}  name={'houses'} setSelectedItem={setSelectedHouse} className='filter'></Filter></div>
+        <Filter items={houses} selectedItem={selectedHouse}  name={'all houses'} setSelectedItem={setSelectedHouse} className='filter'></Filter></div>
          
           <div className="character-grid">
             {currentCharacters.map((character) => (
