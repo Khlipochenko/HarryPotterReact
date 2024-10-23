@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { ShopContext } from '../../../contexts/ShopContext';
 import { useEffect } from 'react';
 import { CartCard } from '../../../components/CartCard/CartCard';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Cart.scss'
 export const Cart=()=>{
     const {
@@ -21,7 +21,7 @@ export const Cart=()=>{
          setSelectedCategory('')
        },[])
     
-     
+     const navigate=useNavigate()
       useEffect(() => { 
       
         const filterProducts = products.filter((product) => product.cart >0);
@@ -57,6 +57,7 @@ export const Cart=()=>{
     {products.length > 0 && currentProducts.length > 0 ? (
       <div>
       <div className='total-panel'>Total: {(products.reduce((sum, el) => sum + el.price * el.cart, 0)).toFixed(2)} €
+     <button className='button-buy' onClick={()=>navigate('/buy')}>Buy</button>
       <button className='button-delete-all' onClick={deleteAllCart}>Delete all</button>
       </div>
       

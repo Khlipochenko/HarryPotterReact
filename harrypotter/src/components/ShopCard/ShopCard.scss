@@ -33,7 +33,11 @@
             border: none;
             background-color: transparent;
             font-size: 2rem;
-            
+            box-shadow: none;
+            cursor: pointer;
+            &:active{
+                color: #ff0c0c !important;
+            }
 
         }
         img{

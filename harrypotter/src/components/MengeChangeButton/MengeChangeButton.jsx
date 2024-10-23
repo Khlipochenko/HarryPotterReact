@@ -38,7 +38,7 @@ export const MengeChangeButton = ({ product }) => {
       >
         -
       </button>
-      <button className="add-cart" onClick={changeCart}>
+      <button className="change-cart" onClick={changeCart}>
         change
       </button>
     

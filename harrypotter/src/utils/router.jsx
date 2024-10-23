@@ -12,6 +12,7 @@ import { Cart } from "../pages/Shop/Cart/Cart";
 import { Product } from "../pages/Shop/Product/Product";
 import { Wischlist } from "../pages/Shop/Wischlist/Wischlist";
 import { LayoutShop } from "../components/LayoutShop/LayoutShop";
+import { Buy } from "../pages/Shop/Buy/Buy";
 export const router = createBrowserRouter([
   {
     element: <Layout></Layout>,
@@ -46,7 +47,11 @@ export const router = createBrowserRouter([
       {
         element: <Spells></Spells>,
         path: "/spells",
-      },
+      },{
+      element: <Buy></Buy>,
+      path: "/buy",
+    },
+
       {
         element: <LayoutShop></LayoutShop>,
         path: "/shop",
