@@ -1,0 +1,38 @@
+input{
+    width: 3rem;
+    height: 2.4rem;
+    text-align: center;
+    border: none;
+  
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.button-add{
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: #fce3ce;
+}
+.button-minus{
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-right: 2rem;
+    background-color: #fce3ce;
+}
+.add-cart{
+    border: 1px solid #570304;
+    border-radius: 7px;
+}
+button{
+   
+    height: 2.4rem;
+    width: 3rem;
+    color: #570304;
+    background-color: transparent;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    &:hover{
+        background-color:rgb(248, 199, 138)
+    }
+    &:active{
+        background-color: #b65557;
+    }
+}

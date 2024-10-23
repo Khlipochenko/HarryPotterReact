@@ -7,7 +7,7 @@ import './ShopHeader.scss'
 export const ShopHeader=()=>{
     const[countInCart, setCountInCart]=useState(0)
     const{currentProducts, setCurrentProducts,
-        products, setProducts,selectedCategory, setSelectedCategory ,selectedSort, setSelectedSort, categories,sortOptions
+        products, setProducts,selectedCategory, setSelectedCategory ,selectedSort, setSelectedSort, categories,sortOptions,
     }=useContext(ShopContext)
  useEffect(()=>{
     const currentCount=products.reduce((sum, product)=>sum+=product.cart,0)
@@ -18,6 +18,7 @@ return(
     <div className="shop-header">
           
       <div className="shop-search-panel">
+      <>
         <Filter 
           items={sortOptions}
           selectedItem={selectedSort}
@@ -30,12 +31,12 @@ return(
           selectedItem={selectedCategory}
           setSelectedItem={setSelectedCategory}
           name={"all categories"}
-        ></Filter>
+        ></Filter></>
 
       </div>
     <div className="link-to-other-page">
-    <NavLink to={'/shop/wischlist'}><FaHeart /></NavLink>
-    <NavLink to={'/shop/cart'}><FaShoppingCart /><span className="count-in-cart">{countInCart}</span></NavLink>
+    <NavLink to={'/shop/wischlist'} ><FaHeart /></NavLink>
+    <NavLink to={'/shop/cart'} ><FaShoppingCart /><span className="count-in-cart">{countInCart}</span></NavLink>
     </div></div>
 )
 }

@@ -4,27 +4,18 @@ import { Link } from "react-router-dom";
 import "./ProductCard.scss"
 import { useContext } from "react";
 import { ShopContext } from "../../contexts/ShopContext";
+import { MengeButton } from "../MengeButton/MengeButton";
 
 
 export const ProductCard=({product})=>{
-   const[count, setCount]=useState(0)
-   const[isAdd,setIsAdd]=useState(false)
-    const { toggleFavorite,addCart, products } = useContext(ShopContext);
+   
+    const { toggleFavorite , setIsSinglePage} = useContext(ShopContext);
     function handleClick(){
         toggleFavorite(product.id);
         
     }
 
-    function changeCart(){
-        addCart(product.id, count)
-                
-                setIsAdd(true)
-                setTimeout(() => {
-                   setIsAdd(false) 
-                   setCount(0)
-                },2000);
-                
-    }
+   
   
 
    
@@ -48,17 +39,11 @@ export const ProductCard=({product})=>{
             <span>{product.price} €</span>
             <div >
 
-            <button className="button-add" onClick={() => setCount(prev => Math.min(prev + 1, product.stock))}>+</button>
-
-                <input type="text" name="menge"  readOnly value={count}  />
-                <button className="button-minus" onClick={()=>{
-                count>0&&setCount(prev=>prev-1)}}>-</button>
-                <button className="add-cart" onClick={changeCart}><FaCartShopping /></button>
-                {isAdd&&(count>0?(<div>Product added to card</div>):(<p style={{color:'red'}}>Select quantity</p>))}
+            <MengeButton icon={<FaCartShopping />} product={product}></MengeButton>
                 
             </div>
         </div>
       
-       <Link to='/shop'>Go back</Link>
+       <Link to='/shop' >Go back</Link>
     </div>)
 }

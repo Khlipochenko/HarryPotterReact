@@ -6,11 +6,12 @@ import { ProductCard } from "../../../components/ProductCard/ProductCard";
 export const Product = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-  const { products } = useContext(ShopContext);
+  const { products} = useContext(ShopContext);
   useEffect(() => {
     const currentProduct = products.find((product) => product.id == id);
     console.log(currentProduct);
     setProduct(currentProduct);
+   
   }, [products]);
 
   return( product ? (

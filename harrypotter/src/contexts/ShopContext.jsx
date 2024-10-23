@@ -8,7 +8,7 @@ export const ShopProvider=({children})=>{
     const [currentProducts, setCurrentProducts] = useState([]);//die zeigen werden
     const [products, setProducts] = useState(data.products);//datei von json
   const [selectedCategory, setSelectedCategory] = useState("");
- 
+
   const [selectedSort, setSelectedSort] = useState("");
   const categories = [
     "Wands",
@@ -35,6 +35,19 @@ export const ShopProvider=({children})=>{
             : product
         )
       );};
+      const changeCartCount = (productId, count) => {
+        setProducts((prevProducts) =>
+          prevProducts.map((product) =>
+            product.id === productId
+              ? { ...product, 
+                
+                stock: 
+                
+                product.stock+product.cart-count,
+                cart:count }
+              : product
+          )
+        );};
        const deleteCart = (productId) => {
          setProducts((prevProducts) =>
            prevProducts.map((product) =>
@@ -53,6 +66,6 @@ export const ShopProvider=({children})=>{
 
   const sortOptions = ["low to high", "high to low"];
 return(
-    <ShopContext.Provider value={{favoriteProducts, setFavoriteProducts,cart, setCart, countProducts, setCountsProducts,currentProducts, setCurrentProducts,products, setProducts,selectedCategory, setSelectedCategory,selectedSort, setSelectedSort,categories,sortOptions,toggleFavorite, addCart, deleteCart, deleteAllCart}}>{children}</ShopContext.Provider>
+    <ShopContext.Provider value={{favoriteProducts, setFavoriteProducts,cart, setCart, countProducts, setCountsProducts,currentProducts, setCurrentProducts,products, setProducts,selectedCategory, setSelectedCategory,selectedSort, setSelectedSort,categories,sortOptions,toggleFavorite, addCart, deleteCart, deleteAllCart, changeCartCount}}>{children}</ShopContext.Provider>
 )
 }

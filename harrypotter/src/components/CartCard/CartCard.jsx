@@ -1,6 +1,8 @@
 import { useContext, useEffect } from "react";
 import "./CartCard.scss";
 import { ShopContext } from "../../contexts/ShopContext";
+
+import { MengeChangeButton } from "../MengeChangeButton/MengeChangeButton";
 export const CartCard = ({ product, index }) => {
   const { deleteCart } = useContext(ShopContext);
 
@@ -16,8 +18,9 @@ export const CartCard = ({ product, index }) => {
         <span>
           Price: <b>{product.price} €</b>
         </span>
-        <span>
-          Menge: <b>{product.cart}</b>
+       
+        <span className="menge">
+          Menge: <MengeChangeButton product={product}></MengeChangeButton>
         </span>
       </div>
       <div className="total">
