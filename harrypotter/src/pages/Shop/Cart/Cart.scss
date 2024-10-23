@@ -1,3 +1,48 @@
 .cart-page{
     padding-top: 14rem;
+    padding-bottom: 10rem;
+    a{
+        position: fixed;
+        top: 12rem;
+        right: 2rem;
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: bold;
+       color: #f3191c;
+       &:hover{
+        color:#a50609
+      } 
+    }
+    
+    h1{
+    text-align: center;
+margin-bottom: 2rem;}
+.total-panel{
+    font-size: 1.5rem;
+    position: fixed ;
+    top:18rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: rgb(245, 32, 25);
+    font-weight: bold;
+    button{
+        align-self: center;
+        width: 8rem;
+        margin-top: .5rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+        border: none;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color:#f39344;
+        border-radius: 7px;
+
+        &:hover{
+            background-color:rgb(248, 199, 138)
+        }
+        &:active{
+            background-color: #b65557;
+        }
+    }
+}
 }

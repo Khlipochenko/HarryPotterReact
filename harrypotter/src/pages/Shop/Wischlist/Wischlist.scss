@@ -1,10 +1,36 @@
 .wishlist{
-  
+  padding-top: 12rem;
     text-align: center;
+    
     width: 70%;
+    color:#740001 ;
+    .empty-wishlist{
+      margin: 0;
+       
+       
+       h1{
+       padding-top: 3rem;
+      
+       }
+      
+    }
+    h1{
+        padding-bottom: 2rem;
+    }
+    a{
+        position: fixed;
+        top: 12rem;
+        right: 2rem;
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: bold;
+       color: #f3191c;
+       &:hover{
+        color:#a50609
+      } 
+    }
    
-margin: 0 auto;
-   
+margin: 0 auto; 
 .wishlist-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));

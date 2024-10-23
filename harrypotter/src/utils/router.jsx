@@ -61,7 +61,7 @@ export const router = createBrowserRouter([
           path:'/shop/cart'
           },
           {element:<Product></Product>,
-          path:'/shop/:product'
+          path:'/shop/:id'
           }
 
 

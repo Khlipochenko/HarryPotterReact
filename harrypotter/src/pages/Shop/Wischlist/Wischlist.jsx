@@ -19,7 +19,7 @@ export const Wischlist = () => {
      setSelectedCategory('')
    },[])
 
-  // Фильтрация избранных продуктов
+ 
   useEffect(() => { 
   
     const filterProducts = products.filter((product) => product.favorite === true);
@@ -52,19 +52,19 @@ export const Wischlist = () => {
     <div className="wishlist">
      <h1>WischList</h1>
      <NavLink to="/shop">Go back</NavLink>
-    <div className="wishlist-grid">
+    
    
-      {products.length > 0 && currentProducts.length > 0 ? (
+      {products.length > 0 && currentProducts.length > 0 ? (<div className="wishlist-grid">{
         currentProducts.map((favoriteProduct) => (
-          <ShopCard product={favoriteProduct} key={favoriteProduct.id} />
-        ))
+          <ShopCard product={favoriteProduct} key={favoriteProduct.id} />))}</div>
+        
       ) : (
         <div className="empty-wishlist">
           <h1>Wishlist is empty</h1>
         </div>
       )}
       
-    </div>
+    
     
     </div>
   );

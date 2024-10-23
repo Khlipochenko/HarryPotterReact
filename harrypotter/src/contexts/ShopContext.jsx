@@ -35,17 +35,24 @@ export const ShopProvider=({children})=>{
             : product
         )
       );};
-      // const minusCart = (productId) => {
-      //   setProducts((prevProducts) =>
-      //     prevProducts.map((product) =>
-      //       product.id === productId
-      //         ? { ...product, stock: product.stock+1, cart:product.cart-1 }
-      //         : product
-      //     )
-        // );};
+       const deleteCart = (productId) => {
+         setProducts((prevProducts) =>
+           prevProducts.map((product) =>
+             product.id === productId
+               ? { ...product, stock: product.stock+product.cart, cart:0 }
+               : product
+           )
+       );};
+       const deleteAllCart=()=>{
+        setProducts((prevProducts) =>
+          prevProducts.map((product) =>
+            product.cart>0
+              ? { ...product, stock: product.stock+product.cart, cart:0 }
+              : product
+          ) );};
 
   const sortOptions = ["low to high", "high to low"];
 return(
-    <ShopContext.Provider value={{favoriteProducts, setFavoriteProducts,cart, setCart, countProducts, setCountsProducts,currentProducts, setCurrentProducts,products, setProducts,selectedCategory, setSelectedCategory,selectedSort, setSelectedSort,categories,sortOptions,toggleFavorite, addCart}}>{children}</ShopContext.Provider>
+    <ShopContext.Provider value={{favoriteProducts, setFavoriteProducts,cart, setCart, countProducts, setCountsProducts,currentProducts, setCurrentProducts,products, setProducts,selectedCategory, setSelectedCategory,selectedSort, setSelectedSort,categories,sortOptions,toggleFavorite, addCart, deleteCart, deleteAllCart}}>{children}</ShopContext.Provider>
 )
 }

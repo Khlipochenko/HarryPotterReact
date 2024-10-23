@@ -1,0 +1,61 @@
+.cartCard{
+   margin: 0 14rem;
+    display: grid;
+    grid-template-columns: 10px 10rem 45rem 10rem;
+   grid-template-areas: 
+   'index bild name total'
+   'index bild description total'
+   'index bild menge total';
+   font-size: 1.3rem;
+   color:#570304;
+   border-bottom: 1px solid grey;
+   .name{
+    grid-area: name;
+   
+    
+   }
+   .description{
+    grid-area: description;
+   }
+   .total{
+    grid-area: total;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button{
+        width: 5rem;
+        margin-top: .5rem;
+        font-size: 1rem;
+        padding: 0.3rem;
+        border: none;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color:#f59b52;
+        border-radius: 7px;
+        &:hover{
+            background-color:rgb(248, 199, 138)
+        }
+        &:active{
+            background-color: #b65557;
+        }
+    }
+   }
+   
+   .menge{
+    grid-area: menge;
+    display: flex;
+    gap: 1rem;
+   }
+   .bild{
+    border-left: 1px solid grey;
+    grid-area: bild;
+  margin: 0 2rem;
+        width: 7rem;
+        padding: 1rem ;
+  
+   }
+   .index{
+    grid-area: index ;
+    align-self:center ;
+   justify-self: center;
+   }
+}
