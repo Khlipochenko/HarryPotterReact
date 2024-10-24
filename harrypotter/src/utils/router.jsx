@@ -13,6 +13,8 @@ import { Product } from "../pages/Shop/Product/Product";
 import { Wischlist } from "../pages/Shop/Wischlist/Wischlist";
 import { LayoutShop } from "../components/LayoutShop/LayoutShop";
 import { Buy } from "../pages/Shop/Buy/Buy";
+import { SearchResults } from "../pages/Shop/SearchResults/SearchResults";
+import { SingleProductLayout } from "../components/LayoutShop/SingleProductLayout";
 export const router = createBrowserRouter([
   {
     element: <Layout></Layout>,
@@ -50,6 +52,13 @@ export const router = createBrowserRouter([
       },{
       element: <Buy></Buy>,
       path: "/buy",
+    },{element: <SingleProductLayout></SingleProductLayout>,
+    path: "/shop/:id",
+    children:[{
+      index: true,
+      element:<Product></Product>,
+      }]
+
     },
 
       {
@@ -65,8 +74,9 @@ export const router = createBrowserRouter([
           {element:<Cart></Cart>,
           path:'/shop/cart'
           },
-          {element:<Product></Product>,
-          path:'/shop/:id'
+          
+          {element:<SearchResults></SearchResults>,
+          path:'/shop/search'
           }
 
 

@@ -2,7 +2,7 @@ import { FaCartShopping,FaHeart } from "react-icons/fa6";
 
 import { useNavigate } from "react-router-dom";
 import "./ShopCard.scss"
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ShopContext } from "../../contexts/ShopContext";
 import { MengeButton } from "../MengeButton/MengeButton";
 
@@ -12,13 +12,14 @@ export const ShopCard=({product})=>{
 
     const { toggleFavorite} = useContext(ShopContext);
     function handleClick(){
+        console.log(product.id);
         toggleFavorite(product.id);
         
     }
     function handleCardClick(){
         navigate(`/shop/${product.id}`); 
     }
-    
+  
   
 
    

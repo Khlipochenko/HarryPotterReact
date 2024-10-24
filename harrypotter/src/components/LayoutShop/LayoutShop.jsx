@@ -4,9 +4,9 @@ import { ShopProvider } from "../../contexts/ShopContext"
 export const LayoutShop=()=>{
     return(<>
     
-    <ShopProvider>   {/*   für shop */}
+    
         <ShopHeader></ShopHeader>
         <Outlet></Outlet>
-        </ShopProvider>
+      
     </>)
 }

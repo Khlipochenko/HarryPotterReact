@@ -1,8 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { ShopCard } from "../../components/ShopCard/ShopCard";
-import data from "./ShopDatei.json";
 import "./Shop.scss";
-import { Filter } from "../../components/Filter/Filter";
 import { ShopContext } from "../../contexts/ShopContext";
 
 export const Shop = () => {
@@ -23,13 +21,14 @@ export const Shop = () => {
         (product) => product.category == selectedCategory
       );
       setCurrentProducts(filterProducts);
-    } else {
+     } 
+    else {
       setCurrentProducts(products);
-    }
+     }
   }, [selectedCategory, products]);
 
   useEffect(() => {
-    console.log("products",products);
+  
     if (selectedSort == sortOptions[0]) {
       const sortProducts = [...currentProducts].sort((a, b) => a.price - b.price);
       setCurrentProducts(sortProducts);

@@ -19,6 +19,6 @@ export const Product = () => {
     <ProductCard product={product}></ProductCard>
     </div>
   ) : (
-    <p>Not found</p>
+    <h1 style={{paddingTop:'12rem', textAlign:'center'}}> Product not found</h1>
   )
 )};

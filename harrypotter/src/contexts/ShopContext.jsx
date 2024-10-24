@@ -2,10 +2,10 @@ import { createContext, useState } from "react";
 import data from "../pages/Shop/ShopDatei.json";
 export const ShopContext =createContext();
 export const ShopProvider=({children})=>{
-    const [favoriteProducts, setFavoriteProducts]=useState([])
-    const[cart, setCart]=useState([]);
-    const[countProducts, setCountsProducts]=useState(1)
-    const [currentProducts, setCurrentProducts] = useState([]);//die zeigen werden
+ 
+  
+
+    const [currentProducts, setCurrentProducts] = useState(data.products);//die zeigen werden
     const [products, setProducts] = useState(data.products);//datei von json
   const [selectedCategory, setSelectedCategory] = useState("");
 
@@ -66,6 +66,6 @@ export const ShopProvider=({children})=>{
 
   const sortOptions = ["low to high", "high to low"];
 return(
-    <ShopContext.Provider value={{favoriteProducts, setFavoriteProducts,cart, setCart, countProducts, setCountsProducts,currentProducts, setCurrentProducts,products, setProducts,selectedCategory, setSelectedCategory,selectedSort, setSelectedSort,categories,sortOptions,toggleFavorite, addCart, deleteCart, deleteAllCart, changeCartCount}}>{children}</ShopContext.Provider>
+    <ShopContext.Provider value={{currentProducts, setCurrentProducts,products, setProducts,selectedCategory, setSelectedCategory,selectedSort, setSelectedSort,categories,sortOptions,toggleFavorite, addCart, deleteCart, deleteAllCart, changeCartCount}}>{children}</ShopContext.Provider>
 )
 }

@@ -1,10 +1,15 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { ShopContext } from "../../contexts/ShopContext";
 import "./MengeChangeButton.scss"
 export const MengeChangeButton = ({ product }) => {
   const [count, setCount] = useState(product.cart);
   const [isAdd, setIsAdd] = useState(false);
-  const { changeCartCount } = useContext(ShopContext);
+  const { changeCartCount, products } = useContext(ShopContext);
+  console.log('in mengeButton',product.cart);
+ console.log('count', count);
+// useEffect(()=>{
+// setCount(product.cart)
+// },[product.cart])
   function changeCart() {
     changeCartCount(product.id, count);
     
@@ -29,7 +34,7 @@ export const MengeChangeButton = ({ product }) => {
         +
       </button>
 
-      <input type="text" name="menge" readOnly value={count} />
+      <input type="text" name="menge" readOnly value={count}/>
       <button
         className="button-minus"
         onClick={() => {

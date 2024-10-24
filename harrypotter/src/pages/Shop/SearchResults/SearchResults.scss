@@ -1,0 +1,13 @@
+.search-results-page{
+    padding-top: 14rem;
+    text-align: center;
+
+ 
+    .liste-search{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+       margin: 3rem 5rem 5rem 5rem;
+        justify-content: center;
+    }
+}

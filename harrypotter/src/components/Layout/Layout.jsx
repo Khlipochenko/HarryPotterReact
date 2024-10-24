@@ -8,12 +8,12 @@ export const Layout=()=>{
     return(<>
      <Provider>{/*   für character */}
      <MovieProvider>{/*   für movies und books */}
-
+     <ShopProvider>   {/*   für shop */}
         <Header></Header>
         <Outlet></Outlet>
 
         <Footer></Footer>
-       
+        </ShopProvider>
         </MovieProvider>
          </Provider>
     </>)
