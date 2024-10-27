@@ -1,10 +1,18 @@
 .shop{
-    padding: 15rem 0 10rem;
-    display: flex;
-    justify-content: center;
+    padding: 15rem 0 10rem 0;
+   margin: 0 5rem;
+   
+ 
 .products-grid{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, 22rem);
+    gap: 3rem;
+    grid-template-rows: repeat(auto-fill, 26rem);
+    justify-content: center;
 }
 }
+@media (max-width: 768px) {
+
+    .shop{
+        padding-top: 20rem;
+}}

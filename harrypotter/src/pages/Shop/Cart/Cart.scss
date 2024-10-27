@@ -47,3 +47,29 @@ margin-bottom: 2rem;}
     }
 }
 }
+
+@media (max-width: 768px) {
+    .cart-page{
+        padding-top: 22rem;
+padding-bottom: 5rem;
+a{
+    font-size: 1rem;
+    top:19.3rem;
+    left: 1rem;}
+    .total-panel{
+        top:18.5rem;
+
+        right: .3rem;
+        display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: .5rem;
+      font-size: 1rem;
+      button{
+        align-self: center;
+        width: 5rem;
+        font-size: 0.8rem;
+        padding: .5rem;
+    }
+    } }
+}

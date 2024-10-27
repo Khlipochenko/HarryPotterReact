@@ -15,15 +15,19 @@ import { LayoutShop } from "../components/LayoutShop/LayoutShop";
 import { Buy } from "../pages/Shop/Buy/Buy";
 import { SearchResults } from "../pages/Shop/SearchResults/SearchResults";
 import { SingleProductLayout } from "../components/LayoutShop/SingleProductLayout";
+import { Home } from "../pages/Home/Home";
 export const router = createBrowserRouter([
   {
     element: <Layout></Layout>,
     path: "/",
-    errorElement: <Navigate to="/characters"></Navigate>,
+    errorElement: <Navigate to="/home"></Navigate>,
     children: [
       {
         index: true,
-        element: <Navigate to="/characters" />,
+        element: <Navigate to="/home" />,
+      }, {
+        element: <Home></Home>,
+        path: "/home",
       },
       {
         element: <Character></Character>,

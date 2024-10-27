@@ -27,17 +27,19 @@ export const SearchResults = () => {
   }, [products, selectedSort,selectedCategory,selectedSort, setCurrentProducts,location.state.search]);
   useEffect(() => {
     setSelectedSort("");
+    const updateSearch = products.filter((product) =>
+      product.name.toLowerCase().includes(location.state.search.toLowerCase()))
     if (selectedCategory != "") {
-      const filterProducts = currentProducts.filter(
+      
+      const filterProducts = updateSearch.filter(
         (product) => product.category == selectedCategory
       );
       setCurrentProducts(filterProducts);
     } else {
-    const updateSearch = products.filter((product) =>
-            product.name.toLowerCase().includes(location.state.search.toLowerCase()))
+   
       setCurrentProducts(updateSearch);
     }
-  }, [selectedCategory, products]);
+  }, [selectedCategory, products,location.state.search]);
 
   useEffect(() => {
     if (selectedSort == sortOptions[0]) {

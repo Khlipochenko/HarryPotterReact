@@ -3,7 +3,7 @@
 display: flex;
 justify-content: center;
 background: linear-gradient(0deg, rgb(15, 61, 99) 14%, #060D1F);
-height: 100vh;
+min-height: 100vh;
 color:#740001;
 font-family: "Arima", system-ui;
 font-size: 1.5rem;
@@ -52,5 +52,24 @@ img{
     }
 
 }
+}
+}
+
+
+@media (max-width: 768px) {
+.book-page{
+    .book-grid{
+        width: 80%;
+     
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+
+
+        img{
+            width: 18rem;
+           margin: 0 auto;
+        }
+    }
 }
 }

@@ -27,18 +27,17 @@ export const Movie = () => {
              
               <h2>Name: {value.title}. </h2>
               <h2>( Serial : {value.serial})</h2>
-              <NavLink to={'/movies'}><button className="back-button">Go back</button></NavLink>
+              <NavLink to={'/movies'} ><button  className="movie-back-button" >Go back</button></NavLink>
             </div>
             <div className="bild">
               <img src={value.poster} alt={value.title} />
             </div>
             <div className="video">
               <iframe className="youtube"
-                width="560"
-                height="315"
+              
                 src={`${
                   urlsVideo[Number(movie) - 1]
-                }?autoplay=1&mute=1&controls=0`}
+                }`}
                 title="YouTube video player"
                 frameborder="0"
                 allow="autoplay; encrypted-media"

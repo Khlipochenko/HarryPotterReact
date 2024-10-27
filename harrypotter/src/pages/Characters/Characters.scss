@@ -1,26 +1,31 @@
 .character-list{
-  
-  padding: 8rem ;
-    
+ 
+  padding: 8rem 8rem 2rem 8rem;
+
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, rgb(15, 61, 99) 14%, #060D1F);
-width: 100%;
+align-items: center;
  
 gap: .2rem;
-align-items: center;
+margin-bottom: 3rem;
+
    .character-grid{
+   
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 17rem);
+    grid-template-columns: repeat(auto-fill, 17rem);
     gap: 2rem;
-    grid-auto-rows: 20rem;
+    grid-template-rows: repeat(auto-fill, 20rem);
  text-align: center;
+ justify-content: center;
+ 
 
    }
    .searche-panel{
-    width: 93rem;// 17+5+2*4
+    width: 100%;
     display: flex;
-    
+    flex-wrap: wrap;
 
   
    justify-content: space-between;
@@ -28,3 +33,19 @@ align-items: center;
     
    }
 }
+//Laptop
+@media (max-width: 768px) {
+  .character-list .searche-panel{
+  
+  width: 100%;
+   justify-content: center;
+   padding:1rem 0; 
+    
+   }
+  
+}
+
+/*Handy */
+@media (max-width: 580px) {
+  
+} 

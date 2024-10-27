@@ -8,7 +8,8 @@ export const ShopProvider=({children})=>{
     const [currentProducts, setCurrentProducts] = useState(data.products);//die zeigen werden
     const [products, setProducts] = useState(data.products);//datei von json
   const [selectedCategory, setSelectedCategory] = useState("");
-
+  const[countInCart, setCountInCart]=useState(0)
+  const[countFavorite, setCountFavorite]=useState(0)
   const [selectedSort, setSelectedSort] = useState("");
   const categories = [
     "Wands",
@@ -66,6 +67,6 @@ export const ShopProvider=({children})=>{
 
   const sortOptions = ["low to high", "high to low"];
 return(
-    <ShopContext.Provider value={{currentProducts, setCurrentProducts,products, setProducts,selectedCategory, setSelectedCategory,selectedSort, setSelectedSort,categories,sortOptions,toggleFavorite, addCart, deleteCart, deleteAllCart, changeCartCount}}>{children}</ShopContext.Provider>
+    <ShopContext.Provider value={{currentProducts, setCurrentProducts,products, setProducts,selectedCategory, setSelectedCategory,selectedSort, setSelectedSort,categories,sortOptions,toggleFavorite, addCart, deleteCart, deleteAllCart, changeCartCount,countInCart, setCountInCart,countFavorite, setCountFavorite}}>{children}</ShopContext.Provider>
 )
 }

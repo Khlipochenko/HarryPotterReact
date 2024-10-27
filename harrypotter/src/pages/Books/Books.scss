@@ -1,12 +1,19 @@
 .books-page{
     padding-top: 10rem;
     background: linear-gradient(0deg, rgb(15, 61, 99) 14%, #060D1F);
-    height: 100vh;
+    min-height: 100vh;
 .books{
-   padding: 0 25rem;
+   padding: 0 5rem;
     display: flex;
 
 justify-content: center;
 gap: 2rem;
     flex-wrap: wrap;
 }}
+@media (max-width: 768px) {
+    .books-page{
+        .books{
+            padding: 0 2rem 5rem 2rem;
+        }
+    }
+}

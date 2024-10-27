@@ -1,6 +1,8 @@
 .search-shop{
-     
+
+  padding-top: 0.5rem; 
     .search-shop-form-button{
+     
       background-color:#FFBB6F;
       height: 100%;
       font-size: 14px;
@@ -23,7 +25,8 @@
     }
   
   input {
-      width: 38rem;
+     width:  38rem;
+   
       padding: 12px 24px;
       height: 2.5rem;
   
@@ -46,3 +49,27 @@
           letter-spacing: 1.5px;
       }
     }}
+    @media (max-width: 1400px) {
+      .search-shop{
+        input{
+          width: 15rem;
+        }
+        .search-shop-form-button{
+          width: 6rem;
+        }
+      }
+
+
+    }
+    @media (max-width: 768px) {
+      .search-shop{
+        input{
+          width: 10rem;
+        }
+        .search-shop-form-button{
+          width: 5rem;
+        }
+      }
+
+
+    }

@@ -22,12 +22,12 @@ import { CharactersContext } from "../../contexts/CharactersContext";
 return(
     <>
      <ReactPaginate className="paginate"
-        nextLabel="next >"
+        nextLabel=">"
         onPageChange={handlePageClick}
-        pageRangeDisplayed={3}
+        pageRangeDisplayed={2}
         marginPagesDisplayed={2}  
         pageCount={pageCount}
-        previousLabel="< previous"
+        previousLabel="<"
         // pageClassName="page-item"
         // pageLinkClassName="page-link"
         // previousClassName="page-item"

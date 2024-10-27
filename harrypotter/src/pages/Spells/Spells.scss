@@ -4,20 +4,22 @@ display: flex;
 align-items: center;
 flex-direction: column;
 justify-content: start;
-
+margin-bottom: 3rem;
 padding-top: 10rem;
-width: 100%;
-height: 100vh;
+min-height: 100vh;
+
+
+
+
 background: linear-gradient(0deg, rgb(15, 61, 99) 14%, #060D1F);
 .spells-grid{
+    justify-content: center;
+    padding: 1rem 5rem;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 17rem);
+    grid-template-columns: repeat(auto-fill, 17rem);
     gap: 2rem;
-    grid-auto-rows: 17rem;
+   // grid-template-rows:  17rem;
  text-align: center;
  padding-bottom: 3rem;
 }}
-@media (max-width: 750px) {
-    .spells-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  }}

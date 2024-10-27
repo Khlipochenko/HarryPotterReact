@@ -60,3 +60,18 @@
    justify-self: center;
    }
 }
+@media (max-width: 768px) {
+    .cartCard{
+        padding: 1rem;
+        border: 1px solid grey;
+       margin: 1rem;
+       display: flex;
+       flex-direction: column;
+       .index{
+        align-self: flex-start;
+       }
+       .total{
+        align-items: flex-end;
+       }
+    } 
+}

@@ -43,3 +43,16 @@ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2
 
 
 }
+@media (max-width: 768px) {
+    .shop-header  {  
+    
+      flex-wrap: wrap;
+      .shop-search-panel{
+        flex-wrap: wrap;
+        gap: .4rem;
+      }
+      .link-to-other-page{
+        padding-top: .2rem;
+
+      }
+}}

@@ -23,3 +23,13 @@ img{
         color: #e71d21;
     }
 } }
+
+@media (max-width: 768px) {
+
+    .carousel{
+        img{
+            width: 8rem;
+        }
+    }
+
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Rampart+One&family=Ribeye+Marrow&family=Rye&display=swap');
+.home-page {
+    padding-top: 8rem;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+   color: #040C1E;
+    h3{
+        padding-top: 1rem;
+      
+        
+    }
+}
+
+.home-container {
+  // font-family: "Rye", serif;
+font-family: "Ribeye Marrow", serif;
+//font-family: "Rampart One", sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+   
+    display: flex;
+    padding-top: 12rem;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home-container:after {
+    content: "";
+    
+    background-image: url('/public/bilder/hogwards.jpg');
+    position: absolute;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+   z-index: -1;
+    animation: kenburns-top 16s cubic-bezier(0.4, 0, 0.2, 1) both infinite;
+}
+
+
+
+
+
+
+/* Kenburns-Top-Animation */
+@keyframes kenburns-top {
+    0% {
+        transform: scale(1) translateY(0);
+        transform-origin: 50% 16%;
+    }
+    30% {
+        transform: scale(1.15) translateY(-7px);
+        transform-origin: 50% 10%;
+    }
+    70% {
+        transform: scale(1.25) translateY(-15px);
+        transform-origin: top;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        transform-origin: 50% 16%;
+    }
+}
+//Laptop
+@media (max-width: 768px) {
+    .home-page {
+    
+        font-size: 1rem;
+        .home-container:after{
+            background-position: center;
+           }
+    }
+  }
+  
+  /*Handy */
+  @media (max-width: 580px) {
+    .home-page {
+        
+        font-size: 1rem;
+       color: #DCC07A;
+   
+   .home-container:after{
+    background-position: center;
+   }
+  } }

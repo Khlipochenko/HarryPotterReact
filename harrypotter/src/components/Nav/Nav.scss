@@ -1,4 +1,11 @@
-.nav{
+.menu{
+ 
+    position: relative;
+    button{
+        display: none;
+        cursor: pointer;
+    }
+    .nav{
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
@@ -14,4 +21,42 @@
 color:#BF2B16
         }
     }
-}
+}}
+//Laptop
+@media (max-width: 768px) {
+    .menu{
+        button{
+            display: block;
+           position: absolute;
+           right: 1rem;
+           border: none;
+           box-shadow: none;
+           font-size: 1.2rem;
+        }
+        .nav{
+         display: none;
+        
+       
+        }
+        .show{
+            display: flex;
+            flex-direction: column;
+        background-color: #060F27;
+            position: absolute;
+            top: 2rem;
+            right: 0;
+           
+            padding: 0 1rem;
+            border-radius: 5px;
+        font-size: 1.5rem;
+        a{
+            margin-bottom: .2rem;
+           
+        }
+        }
+  }}
+  
+  /*Handy */
+  @media (max-width: 580px) {
+    
+  } 

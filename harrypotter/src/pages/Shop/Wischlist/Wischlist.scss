@@ -39,3 +39,16 @@ margin: 0 auto;
 
 }
 }
+
+@media (max-width: 768px) {
+  .wishlist{
+    padding-top: 20rem;
+    margin-bottom: 5rem;
+    a{
+      position: fixed;
+      top: 20rem;
+      right: .5rem;
+      font-size: 1.1rem;}
+  }
+
+}
